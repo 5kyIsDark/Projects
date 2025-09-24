@@ -552,7 +552,7 @@ def pdf_merger():
         if not os.path.exists(target):
             print("The specified folder does not exist.")
             return
-        output_pdf = input("Enter the output PDF file name (e.g., merged.pdf): ").strip()
+        output_pdf = input("Enter the output PDF file name: ").strip() + ".pdf"
 
         merger = PdfMerger()
 
